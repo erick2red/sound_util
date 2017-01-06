@@ -37,10 +37,11 @@ int main()
     {
         char buffer [16];
         int i = 0;
+        char *freq_str;
         while (fgets (buffer, 16, notes) != NULL)
         {
             buffer[strlen (buffer) - 1] = 0;
-            char * freq_str = strstr (buffer, ",");
+            freq_str = strstr (buffer, ",");
             freq_str++;
 
             freqs[i] = atof (freq_str);
