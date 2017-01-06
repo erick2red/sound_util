@@ -28,7 +28,7 @@ int main()
     FILE *f = wavfile_open("tunes.wav");
     if (!f)
     {
-        printf("couldn't open sound.wav for writing: %s", strerror(errno));
+        printf("couldn't open tunes.wav for writing: %s", strerror(errno));
         return -1;
     }
 
